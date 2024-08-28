@@ -12,3 +12,17 @@
 label {
   display: block;
 }
+
+.house-img {
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.house-border-LG {
+  border: 3px solid limegreen;
+}
+
+.house-border-W {
+  border: 3px solid white;
+}
