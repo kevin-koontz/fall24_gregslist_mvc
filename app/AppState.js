@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { House } from "./models/House.js"
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -39,6 +40,46 @@ class ObservableAppState extends EventEmitter {
       description: 'Black and shiny, low miles, owned by grandpa',
       transmission: 'automatic'
     })
+  ]
+
+  houses = [
+    new House({
+      year: '1974',
+      bedrooms: 3,
+      bathrooms: 2.5,
+      sqft: 1400,
+      price: 375000,
+      description: 'Newly renovated mid-century modern home',
+      imgUrl: 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+    }),
+    new House({
+      year: '2004',
+      bedrooms: 1,
+      bathrooms: 2.5,
+      sqft: 1400,
+      price: 325000,
+      description: 'Modern home recently renovated, large windows, large yard, wood deck with stone steps.',
+      imgUrl: 'hthttps://plus.unsplash.com/premium_photo-1661876449499-26de7959878f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG91c2VzfGVufDB8fDB8fHwwtps://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+    }),
+    new House({
+      year: '1940',
+      bedrooms: 5,
+      bathrooms: 4.5,
+      sqft: 2000,
+      price: 425000,
+      description: 'Farm house, wide open country, large yard, stone, separate garage',
+      imgUrl: 'hthttps://plus.unsplash.com/premium_photo-166187https://images.unsplash.com/photo-1505916349660-8d91a99c3e23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFybSUyMGhvdXNlfGVufDB8fDB8fHww6449499-26de7959878f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG91c2VzfGVufDB8fDB8fHwwtps://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+    }),
+    new House({
+      year: '1970',
+      bedrooms: 4,
+      bathrooms: 3,
+      sqft: 1500,
+      price: 225000,
+      description: 'Mountain cabin, 2 story + garage, ranch style, beautiful country side',
+      imgUrl: 'hthttps://plus.unsplash.com/premium_photo-166187https://images.unsplash.com/photo-1505916349660-8d91a99c3e23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFybSUyMGhvdXNlfGVufDB8fDB8fHww6449499-26de7959878f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG91c2VzfGVufDB8fDB8fHwwtps://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpghttps://plus.unsplash.com/premium_photo-1670963964797-942df1804579?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c25vdyUyMGxvZGdlfGVufDB8fDB8fHww'
+    })
+
   ]
 }
 
